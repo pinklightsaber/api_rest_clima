@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0" />
+	<link rel="stylesheet" href="assets/css/weather-icons.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<!-- <link rel="shortcut icon" href="assets/ico/favicon.ico" /> -->
+	<title></title>
+</head>
+<body>
+
+	<div id="map" class="col-md-6"></div>
+	<div class="col-md-6">
+
+		<h1>Google API</h1>
+		<select name="" id="locations">
+			<option value="">Seleccione una ciudad</option>
+			<option value="scl">Santiago</option>
+			<option value="san">San Antonio</option>
+			<option value="ccp">Concepción</option>
+			<option value="pmc">Puerto Montt</option>
+			<option value="toc">Tocopilla</option>
+			<option value="put">Putre</option>
+		</select>
+
+		<h3 class="resume"></h3>
+		<div class="icon">
+			<i class="wi-day-sunny"></i>
+		</div>
+	</div>
+
+	<!-- this is where we put our custom functions -->
+	<script src="assets/js/lib/jquery-3.1.0.min.js"></script>
+	<script src="assets/js/functions.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeyLtXfaQEzGRPYbfx1exiUe4dgfZcmQI&callback=initMap"
+    async defer></script>
+</body>
+</html>
